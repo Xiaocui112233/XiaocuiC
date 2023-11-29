@@ -1,1 +1,50 @@
+#include <stdio.h>
+#include <math.h>
 
+int main()
+{
+	unsigned int result = pow(2,32) - 1;
+
+	printf("result = %u\n",result);
+
+	return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	signed char i;
+	unsigned char j;
+
+	i = 255;
+	j = 255;
+
+	printf("signed char %hhd\n",i);
+	printf("unsigned char %hhu\n",j);
+
+	return 0;
+
+}
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int i;
+	double result;
+	printf("请输入一个整数： ");
+	scanf("%d",&i);
+
+	result = pow(i,5);
+
+	printf("%d的五次方是：%.2f\n",i,result);
+
+	return 0;
+
+}
