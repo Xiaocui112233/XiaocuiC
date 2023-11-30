@@ -1,0 +1,84 @@
+#include <stdio.h>
+
+int main()
+
+{
+	char a = 70,b = 105,c = 115, d = 104,e = 67;
+
+	printf("%c%c%c%c%c\n",a,b,c,d,e);
+
+	return 0;
+
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	unsigned char height;
+
+
+	height = 170;
+	printf("小甲鱼的身高是%d厘米！\n",height);
+	
+	return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char a[6] = {'F','i','s','h','C','\0'};
+
+	printf("%s\n",a);
+	printf("hello\n");
+
+	return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+	float fah,cel;
+	printf("请输入华氏度:");
+	scanf("%f",&fah);
+
+	cel = (fah-32)*5/9;
+	printf("转换为摄氏度是:%.2f\n",cel);
+
+	return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char name[256];
+	float tall,height;
+
+	printf("请输入你的姓名:");
+	scanf("%s",name);
+
+	printf("请输入你的身高:");
+	scanf("%f",&tall);
+
+	printf("请输入你的体重:");
+	scanf("%f",&height);
+
+	printf("===========正在为你转换=============\n");
+
+	tall = tall/2.54;//厘米转换英寸
+	height = height/0.453;//公斤转换为磅
+     
+        printf("%s的身高是%.2f(in),体重是%.2f(1b)\n",name,tall,height);
+
+        return 0;
+}
