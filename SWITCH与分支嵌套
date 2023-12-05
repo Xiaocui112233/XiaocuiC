@@ -1,0 +1,102 @@
+#include <stdio.h>
+
+int main()
+{
+	char ch;
+
+	printf("请输入成绩:");
+	scanf("%c",&ch);
+
+	switch(ch)
+	{
+		case 'A': printf("你的成绩在90分以上!\n");break;
+		case 'B': printf("你的成绩在80~90分之间!\n");break;
+		case 'C': printf("你的成绩在70~80分之间!\n");break;
+		case 'D': printf("你的成绩在60~70分之间!\n");break;
+		case 'E': printf("你的成绩在60分以下!\n");break;
+		default: printf("请输入有效的成绩！");
+	}
+
+	return 0;
+
+}
+
+
+
+include <stdio.h>
+
+int main()
+{
+	int a,b;
+
+	printf("请输入俩个数:");
+	scanf("%d %d",&a,&b);
+
+	if(a != b)
+	{
+		if(a>b)
+		{
+			printf("%d > %d\n",a,b);
+		}
+		else
+		{
+			printf("%d < %d\n",a,b);
+		}
+	}
+
+	return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char isRain , isFree;
+	printf("是否有空?(Y/N)");
+	scanf("%c", &isFree);
+
+	getchar();
+
+	printf("是否下雨?(Y/N)");
+	scanf("%c",&isRain);
+
+	if (isFree == 'Y')
+	{
+		if (isRain == 'Y')
+		{
+			printf("记得带伞哦^_^\n");
+		}
+	}
+	else
+	{
+		printf("女神没空! T_T\n");
+	}
+
+	return 0;
+
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+	char hasBF;
+
+	printf("小花你有男朋友吗?(Y/N)");
+	scanf("%c", &hasBF);
+
+	if ('Y' == hasBF)	
+	{
+		printf("那祝福你们喽!\n");
+	}
+	else
+	{
+		printf("那我们在一起!\n");
+	}
+
+	return 0;
+
+}
