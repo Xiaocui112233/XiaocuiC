@@ -1,0 +1,53 @@
+#include <stdio.h>
+//常见的关键字
+//1.c语言提供的，不能自己创建关键字
+//2.变量名不能是关键字
+//int main()
+//{
+//	//int char
+//	{
+//		int a = 10;//自动创建，自动销毁 - 自动变量
+//		//auto 省略掉了
+//		//auto新的c语言语法中也有其他用法 - 暂时不考虑
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	//大量 频繁被使用的数据，想放在寄存器中，提升效率
+//	register int num = 100;建议num的值存放在寄存器中
+//	return 0;
+//}
+
+//类型重命名
+//typedef unsigned int u_int;
+//int main()
+//{
+//	unsigned int num = 100;
+//	u_int num2 = 100;
+//	return 0;
+//}
+
+
+//static - 静态的
+//1.static修饰局部变量
+//2.static修饰全局变量
+//2.static修饰函数
+
+void test()
+{
+	static int a = 1;    //static修饰局部变量，改变了局部变量的生命周期（本质上是改变了变量的存储类型）
+	a++;
+	printf("%d \n", a);
+}
+int main()
+{
+	int i = 0;
+	while (i < 10)
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
